@@ -31,19 +31,19 @@ var tasks = [
   { 
     html_id: "pig-latin",
     task: "Make the list read in pig latin",
-    link: "https://media.giphy.com/media/26tn3yvHAYaf7QAgw/giphy.gif"
+    link: ""
   },
   {
     html_id: "blow-up",
     task: "By manipulating the <code> &lt;div class='circle'&gt; </code> DOM element in JS, make the circle double height and width until its width is greater-than/equal-to 320px." +
           "</br></br>"+
           "At that point make it reduce back to its original size of 40px x 40px ",
-    link: "https://media.giphy.com/media/I02FPwgjBgMZa/giphy.gif"
+    link: ""
   },
   {  
     html_id: "reverse-squares",
     task: "Flip the squares to opposite order",
-    link: "https://media.giphy.com/media/3o85xJiq8goiag3UVG/giphy.gif"
+    link: ""
   }
 ]
 
