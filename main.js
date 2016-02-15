@@ -1,6 +1,6 @@
 
 
-answerQuestionFor("#pig-latin", function(){
+document.querySelector("#pig-latin button").addEventListener('click',function(){
   //your work here
 
   var li_List = (qsAll('#pig-latin li'));
