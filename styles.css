@@ -98,7 +98,7 @@ hr.q-divider{
 /* blow-up styles formatting*/
 /* ---------------------- */
 
-#blow-up .answer-box .circle {
+#blow-up .answer-box .circle-red {
   width: 40px;
   height: 40px;
   background: #c0392b;
@@ -134,4 +134,23 @@ hr.q-divider{
   background: #d35400;
 }
 
+/*color-circle formatting*/
+
+
+.exercise-container #circle-bw {
+  border-radius: 50%;
+  background: rgb(255,255,255);
+  width: 100px;
+  height: 100px;
+  border: 2px solid;
+  vertical-align: bottom;
+}
+
+
+/*compound-investment formatting*/
+
+#compoundInvestment {
+  font-size: 36px;
+  margin-left: 8rem;
+}
 

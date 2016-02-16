@@ -1,42 +1,34 @@
 
+document.querySelector("#thanks button").addEventListener('click',function(){
+  // TASK #1
+})
+
+document.querySelector("#double button").addEventListener('click',function(){
+  // TASK #2
+})
+
+
+document.querySelector("#color-circle button").addEventListener('click',function(){
+  // TASK #3
+})
+
+document.querySelector("#blow-up button").addEventListener('click',function(){
+  // TASK #4}
+})
+
+document.querySelector("#remove button").addEventListener('click',function(){
+  // TASK #5
+})
+
+
+document.querySelector("#reverse-squares button").addEventListener('click',function(){
+  // TASK #6
+})
 
 document.querySelector("#pig-latin button").addEventListener('click',function(){
-  //your work here
-
-  var li_List = (qsAll('#pig-latin li'));
-
-  for (var i = 0; i < li_List.length; i++){
-    console.log
-    li_List[i].innerHTML = li_List[i].innerHTML.split('').reverse().join('');
-  }
+  // TASK #7
 })
 
-answerQuestionFor("#blow-up",function(){
-  var circle = qs('.circle')
-  var w = circle.offsetWidth
-      h = circle.offsetHeight
-
-   if (w >= 320){
-    circle.style.width = "40px";
-    circle.style.height = "40px";
-   } else {
-    circle.style.width = parseInt(w*2)+"px";
-    circle.style.height = parseInt(w*2)+"px";
-   }
+document.querySelector("#cycle-image button").addEventListener('click',function(){
+  // TASK #8
 })
-
-answerQuestionFor("#reverse-squares",function(){
-  var squares = qsAll('#reverse-squares .square');
-  var answerBox = qs('#reverse-squares .answer-box');
-
-
-  answerBox.innerHTML = ''
-
-
-  for (var i = squares.length-1; i >= 0 ; i--){
-    console.log(squares[i].innerHTML)
-    answerBox.appendChild(squares[i])
-  }
-  
-})
-
