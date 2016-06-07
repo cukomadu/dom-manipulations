@@ -32,7 +32,7 @@ document.querySelector("#blow-up button").addEventListener('click',function(){
   var intHeight = parseInt(computedStyle.height)
   redCircle.style.width = (intWidth * 2) + "px" 
   redCircle.style.height = (intHeight * 2) + "px"
-  redCircle.style.transition = ".01s all ease"
+  redCircle.style.transition = ".1s all ease"
   var maxWidth = 320 + "px"
   	if(redCircle.style.width === maxWidth){
   		redCircle.style.width = 40 + "px"
@@ -42,6 +42,16 @@ document.querySelector("#blow-up button").addEventListener('click',function(){
 
 document.querySelector("#remove button").addEventListener('click',function(){
   // TASK #5
+
+  	var ulNode = document.querySelector("#userList")
+  	var liNodes = ulNode.querySelectorAll("li")
+  	for (var i = 0; i < liNodes.length; i ++) {
+    	var liNode = liNodes[i]
+    	console.log(liNode)
+    	if (liNode.classList.contains('inactive')) {
+       		ulNode.removeChild(liNode)
+    	} 
+  	}
 })
 
 
