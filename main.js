@@ -1,6 +1,7 @@
 
 document.querySelector("#thanks button").addEventListener('click',function(){
   // TASK #1
+  alert("yowch! don't click me so hard!")
 })
 
 document.querySelector("#double button").addEventListener('click',function(){
