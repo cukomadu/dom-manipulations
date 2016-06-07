@@ -5,6 +5,9 @@ document.querySelector("#thanks button").addEventListener('click',function(){
 
 document.querySelector("#double button").addEventListener('click',function(){
   // TASK #2
+  var pNode = document.querySelector("#compoundInvestment")
+  var value = pNode.textContent
+  pNode.textContent = parseInt(value) * 2
 })
 
 
