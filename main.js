@@ -14,6 +14,14 @@ document.querySelector("#double button").addEventListener('click',function(){
 
 document.querySelector("#color-circle button").addEventListener('click',function(){
   // TASK #3
+  var circleColor = document.querySelector("#circle-bw")
+  var computedStyle = window.getComputedStyle(circleColor)
+  var backgroundColor = computedStyle.backgroundColor
+  	if(backgroundColor === "rgb(255, 255, 255)"){
+  		circleColor.style.background = "rgb(0, 0, 0)"
+  	} else {
+  		circleColor.style.background = "rgb(255, 255, 255)"	
+  	}
 })
 
 document.querySelector("#blow-up button").addEventListener('click',function(){
