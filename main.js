@@ -26,6 +26,18 @@ document.querySelector("#color-circle button").addEventListener('click',function
 
 document.querySelector("#blow-up button").addEventListener('click',function(){
   // TASK #4}
+  var redCircle = document.querySelector(".circle-red")
+  var computedStyle = window.getComputedStyle(redCircle)
+  var intWidth = parseInt(computedStyle.width)
+  var intHeight = parseInt(computedStyle.height)
+  redCircle.style.width = (intWidth * 2) + "px" 
+  redCircle.style.height = (intHeight * 2) + "px"
+  redCircle.style.transition = ".01s all ease"
+  var maxWidth = 320 + "px"
+  	if(redCircle.style.width === maxWidth){
+  		redCircle.style.width = 40 + "px"
+  		redCircle.style.height = 40 + "px"
+  	} 
 })
 
 document.querySelector("#remove button").addEventListener('click',function(){
