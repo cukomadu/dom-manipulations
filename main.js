@@ -60,12 +60,14 @@ document.querySelector("#reverse-squares button").addEventListener('click',funct
 	var squareParentNode = document.querySelector("#reverse-squares .answer-box")
  	var squareNodes = squareParentNode.querySelectorAll("span")
     //console.log(squareNodes)
-    var reserveOrderArray = []
     
 	for (var i = squareNodes.length - 1; i >= 0; i--) {
     		var sNode = squareNodes[i]
     		//console.log(sNode)
     	
+    	//remove the node
+    	squareParentNode.removeChild(sNode)
+
     	// append the node.
     	squareParentNode.appendChild(sNode)
     	//console.log(reserveOrderArray)
@@ -75,10 +77,28 @@ document.querySelector("#reverse-squares button").addEventListener('click',funct
 
 
 
-
 document.querySelector("#pig-latin button").addEventListener('click',function(){
   // TASK #7
+	 var ulPNode = document.querySelector("#tasks")
+	 var liCNode = ulPNode.querySelectorAll("li")
+	 console.log(liCNode)
+	 
+	var reverseIt = function(stringOfWords){
+    var newResv = ''
+    	for(var i = stringOfWords.length - 1; i >= 0; i--){
+ 			newResv = newResv + stringOfWords[i]
+		}
+		return newResv
+	}
+
+	for (var i = 0; i < liCNode.length; i++){
+    liCNode[i].textContent = reverseIt(liCNode[i].textContent)
+    
+  	}	 
+
 })
+
+ 
 
 document.querySelector("#cycle-image button").addEventListener('click',function(){
   // TASK #8
