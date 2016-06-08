@@ -47,7 +47,7 @@ document.querySelector("#remove button").addEventListener('click',function(){
   	var liNodes = ulNode.querySelectorAll("li")
   	for (var i = 0; i < liNodes.length; i ++) {
     	var liNode = liNodes[i]
-    	console.log(liNode)
+ 
     	if (liNode.classList.contains('inactive')) {
        		ulNode.removeChild(liNode)
     	} 
@@ -57,7 +57,24 @@ document.querySelector("#remove button").addEventListener('click',function(){
 
 document.querySelector("#reverse-squares button").addEventListener('click',function(){
   // TASK #6
+	var squareParentNode = document.querySelector("#reverse-squares .answer-box")
+ 	var squareNodes = squareParentNode.querySelectorAll("span")
+    //console.log(squareNodes)
+    var reserveOrderArray = []
+    
+	for (var i = squareNodes.length - 1; i >= 0; i--) {
+    		var sNode = squareNodes[i]
+    		//console.log(sNode)
+    	
+    	// append the node.
+    	squareParentNode.appendChild(sNode)
+    	//console.log(reserveOrderArray)
+    }
+    
 })
+
+
+
 
 document.querySelector("#pig-latin button").addEventListener('click',function(){
   // TASK #7
